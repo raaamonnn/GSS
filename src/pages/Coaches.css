@@ -1,0 +1,296 @@
+/* Coaches Hero */
+.coaches-hero {
+  background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.coaches-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.coaches-hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Coaches Grid */
+.coaches-grid {
+  background-color: white;
+}
+
+.coaches-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+}
+
+.coach-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.coach-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.coach-image {
+  height: 300px;
+  overflow: hidden;
+}
+
+.coach-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.coach-card:hover .coach-image img {
+  transform: scale(1.05);
+}
+
+.coach-content {
+  padding: 30px;
+}
+
+.coach-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.coach-title {
+  color: #6c5ce7;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.coach-content p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.coach-credentials {
+  margin-bottom: 20px;
+}
+
+.coach-credentials h4 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.coach-credentials ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.coach-credentials li {
+  padding: 5px 0;
+  color: #555;
+  position: relative;
+  padding-left: 20px;
+}
+
+.coach-credentials li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #6c5ce7;
+  font-weight: bold;
+}
+
+.coach-specialties h4 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.specialty-tag {
+  display: inline-block;
+  background: #f8f9fa;
+  color: #6c5ce7;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin: 5px 5px 5px 0;
+  border: 1px solid #e9ecef;
+}
+
+/* Coaching Philosophy */
+.coaching-philosophy {
+  background: #f8f9fa;
+}
+
+.philosophy-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.philosophy-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.philosophy-text > p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.philosophy-points {
+  display: grid;
+  gap: 20px;
+}
+
+.philosophy-point h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.philosophy-point p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.philosophy-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Why Choose Our Coaches */
+.why-choose-coaches {
+  background-color: white;
+}
+
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.reason {
+  text-align: center;
+  padding: 30px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.reason:hover {
+  transform: translateY(-5px);
+}
+
+.reason-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.reason h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.reason p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Coaches CTA */
+.coaches-cta {
+  background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
+  color: white;
+}
+
+.cta-content {
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.cta-content .btn {
+  background-color: white;
+  color: #6c5ce7;
+  font-weight: 600;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+}
+
+.cta-content .btn:hover {
+  background-color: #f8f9fa;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .coaches-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .coaches-list {
+    grid-template-columns: 1fr;
+  }
+
+  .philosophy-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .reasons-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-content h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .coaches-hero {
+    padding: 60px 0;
+  }
+
+  .coaches-hero h1 {
+    font-size: 2rem;
+  }
+
+  .coach-content {
+    padding: 20px;
+  }
+
+  .coach-image {
+    height: 250px;
+  }
+
+  .philosophy-text h2 {
+    font-size: 2rem;
+  }
+} 
