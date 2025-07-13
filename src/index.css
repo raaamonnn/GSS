@@ -5,14 +5,19 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: var(--color-bg);
+  color: var(--color-gold);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+  color: var(--color-gold);
+  background: var(--color-bg);
 }
 
 img {
   max-width: 100%;
   height: auto;
+  background: var(--color-bg);
 } 

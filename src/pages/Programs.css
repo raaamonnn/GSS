@@ -1,7 +1,7 @@
 /* Programs Hero */
 .programs-hero {
-  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
-  color: white;
+  background: var(--color-bg);
+  color: var(--color-gold);
   padding: 80px 0;
   text-align: center;
 }
@@ -10,16 +10,18 @@
   font-size: 3rem;
   margin-bottom: 20px;
   font-weight: 700;
+  color: var(--color-gold);
 }
 
 .programs-hero p {
   font-size: 1.2rem;
+  color: var(--color-cream);
   opacity: 0.9;
 }
 
 /* Programs Grid */
 .programs-grid {
-  background-color: white;
+  background-color: var(--color-dark);
 }
 
 .programs-list {
@@ -29,21 +31,23 @@
 }
 
 .program-card {
-  background: white;
+  background: var(--color-bg);
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(227, 201, 123, 0.10);
   transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid var(--color-gold);
 }
 
 .program-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  box-shadow: 0 20px 40px rgba(227, 201, 123, 0.15);
 }
 
 .program-image {
   height: 250px;
   overflow: hidden;
+  background: var(--color-bg);
 }
 
 .program-image img {
@@ -51,6 +55,7 @@
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s;
+  background: var(--color-bg);
 }
 
 .program-card:hover .program-image img {
@@ -64,11 +69,11 @@
 .program-content h3 {
   font-size: 1.5rem;
   margin-bottom: 15px;
-  color: #333;
+  color: var(--color-gold);
 }
 
 .program-content p {
-  color: #666;
+  color: var(--color-cream);
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -80,7 +85,7 @@
 
 .program-content li {
   padding: 8px 0;
-  color: #555;
+  color: var(--color-gold);
   position: relative;
   padding-left: 25px;
 }
@@ -89,7 +94,7 @@
   content: "✓";
   position: absolute;
   left: 0;
-  color: #28a745;
+  color: var(--color-yellow);
   font-weight: bold;
 }
 
@@ -100,7 +105,7 @@
 
 /* Program Benefits */
 .program-benefits {
-  background: #f8f9fa;
+  background: var(--color-bg);
 }
 
 .benefits-grid {
@@ -112,31 +117,33 @@
 .benefit {
   text-align: center;
   padding: 30px;
-  background: white;
+  background: var(--color-dark);
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(227, 201, 123, 0.10);
   transition: transform 0.3s;
+  border: 1px solid var(--color-gold);
 }
 
 .benefit:hover {
   transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(227, 201, 123, 0.15);
 }
 
 .benefit h3 {
   font-size: 1.3rem;
   margin-bottom: 15px;
-  color: #333;
+  color: var(--color-gold);
 }
 
 .benefit p {
-  color: #666;
+  color: var(--color-cream);
   line-height: 1.6;
 }
 
 /* CTA Section */
 .cta-section {
-  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
-  color: white;
+  background: var(--color-dark);
+  color: var(--color-gold);
 }
 
 .cta-content {
@@ -146,24 +153,27 @@
 .cta-content h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
+  color: var(--color-gold);
 }
 
 .cta-content p {
   font-size: 1.1rem;
   margin-bottom: 30px;
+  color: var(--color-cream);
   opacity: 0.9;
 }
 
 .cta-content .btn {
-  background-color: white;
-  color: #28a745;
+  background-color: var(--color-gold);
+  color: var(--color-bg);
   font-weight: 600;
   padding: 15px 30px;
   font-size: 1.1rem;
 }
 
 .cta-content .btn:hover {
-  background-color: #f8f9fa;
+  background-color: var(--color-cream);
+  color: var(--color-bg);
   transform: translateY(-2px);
 }
 

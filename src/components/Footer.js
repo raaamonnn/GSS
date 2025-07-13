@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
-            <h3>Premier Soccer Training</h3>
+            <h3>GSS</h3>
             <p>Orange County based private soccer coaching, designed to equip kids to reach the highest levels in the game.</p>
             <div className="contact-info">
               <p><strong>Phone:</strong> <a href="tel:949.235.8720">949.235.8720</a></p>
@@ -58,7 +58,7 @@ const Footer = () => {
         
         <div className="footer-bottom">
           <div className="footer-bottom-content">
-            <p>&copy; 2025 Premier Soccer Training. All rights reserved.</p>
+            <p>&copy; 2025 GSS. All rights reserved.</p>
             <div className="footer-links">
               <a href="/privacy">Privacy Policy</a>
               <a href="/terms">Terms of Service</a>

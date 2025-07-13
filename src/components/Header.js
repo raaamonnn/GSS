@@ -15,7 +15,7 @@ const Header = () => {
         <div className="header-content">
           <div className="logo">
             <Link to="/">
-              <img src="/images/pst-logo-trans.png" alt="PST Logo" />
+              <img src="/images/gss-logo.png" alt="GSS Logo" />
             </Link>
           </div>
           

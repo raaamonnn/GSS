@@ -200,7 +200,7 @@ const Gallery = () => {
         <div className="container">
           <div className="cta-content">
             <h2>Ready to Join the Fun?</h2>
-            <p>Book your session today and become part of our Premier Soccer Training family!</p>
+            <p>Book your session today and become part of our GSS family!</p>
             <a href="/book" className="btn btn-primary">Book Your Session</a>
           </div>
         </div>

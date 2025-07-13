@@ -151,7 +151,7 @@ const Programs = () => {
         <div className="container">
           <div className="cta-content">
             <h2>Ready to Get Started?</h2>
-            <p>Book your first session today and see the difference Premier Soccer Training can make in your athlete's development.</p>
+            <p>Book your first session today and see the difference GSS can make in your athlete's development.</p>
             <a href="/book" className="btn btn-primary">Book Your Session Now</a>
           </div>
         </div>

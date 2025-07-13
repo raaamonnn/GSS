@@ -9,7 +9,7 @@ const Home = () => {
         <div className="container">
           <div className="hero-content">
             <div className="hero-text">
-              <h1>PREMIER SOCCER TRAINING</h1>
+              <h1>German Soccer School</h1>
               <p>Orange County based private soccer coaching, designed to equip kids to reach the highest levels in the game.</p>
               <div className="hero-features">
                 <ul>

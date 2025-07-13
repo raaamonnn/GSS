@@ -1,6 +1,6 @@
-# Premier Soccer Training Website
+# GSS Website
 
-A complete React-based recreation of the Premier Soccer Training website, featuring all the original content and functionality with modern, responsive design.
+A complete React-based recreation of the GSS website, featuring all the original content and functionality with modern, responsive design.
 
 ## 🚀 Features
 
@@ -30,7 +30,7 @@ A complete React-based recreation of the Premier Soccer Training website, featur
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd premier-soccer-training
+   cd gss
    ```
 
 2. **Install dependencies**
@@ -100,7 +100,7 @@ The website is fully responsive and works perfectly on:
 To complete the setup, you'll need to add the following images to the `public/images/` directory:
 
 ### Main Images
-- `pst-logo-trans.png` - Company logo
+- `gss-logo.png` - Company logo
 - `8C6A8374.jpg` - Hero image
 - `hand-670-copy.jpg` - Training image
 - `Premier-Team.jpg` - Team photo
@@ -177,12 +177,12 @@ To complete the setup, you'll need to add the following images to the `public/im
 ## 📞 Contact Information
 
 - **Phone**: 949.235.8720
-- **Email**: info@premier-soccertraining.com
+- **Email**: info@gss.com
 - **Location**: Orange County, CA
 
 ## 📄 License
 
-This project is a recreation of the Premier Soccer Training website for educational purposes.
+This project is a recreation of the GSS website for educational purposes.
 
 ## 🤝 Contributing
 
@@ -190,4 +190,4 @@ This is a complete recreation project. For any issues or improvements, please cr
 
 ---
 
-**Note**: This is a React-based recreation of the original Premier Soccer Training website. All content and branding belong to Premier Soccer Training. 
+**Note**: This is a React-based recreation of the original GSS website. All content and branding belong to GSS. 

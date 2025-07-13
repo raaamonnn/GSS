@@ -1,6 +1,6 @@
 .header {
-  background-color: white;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background-color: var(--color-bg);
+  box-shadow: 0 2px 4px rgba(227, 201, 123, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -14,7 +14,7 @@
 }
 
 .logo img {
-  height: 50px;
+  height: 60px;
   width: auto;
 }
 
@@ -28,14 +28,15 @@
 
 .nav-list a {
   text-decoration: none;
-  color: #333;
-  font-weight: 600;
-  font-size: 14px;
+  color: var(--color-gold);
+  font-weight: 700;
+  font-size: 15px;
   transition: color 0.3s;
+  letter-spacing: 1px;
 }
 
 .nav-list a:hover {
-  color: #007bff;
+  color: var(--color-cream);
 }
 
 .header-actions {
@@ -45,33 +46,42 @@
 }
 
 .contact-info .phone {
-  color: #333;
+  color: var(--color-gold);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 16px;
 }
 
 .btn-primary {
-  background-color: #007bff;
-  color: white;
+  background-color: var(--color-gold);
+  color: var(--color-bg);
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
-  font-weight: 600;
-  transition: background-color 0.3s;
+  font-weight: 700;
+  transition: background-color 0.3s, color 0.3s;
+  border: none;
 }
 
 .btn-primary:hover {
-  background-color: #0056b3;
+  background-color: var(--color-cream);
+  color: var(--color-bg);
 }
 
 .login-btn {
   background: none;
-  border: none;
-  color: #333;
-  font-weight: 600;
+  border: 1px solid var(--color-gold);
+  color: var(--color-gold);
+  font-weight: 700;
   cursor: pointer;
   padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.login-btn:hover {
+  background: var(--color-gold);
+  color: var(--color-bg);
 }
 
 .mobile-menu-btn {
@@ -86,7 +96,7 @@
 .mobile-menu-btn span {
   width: 25px;
   height: 3px;
-  background-color: #333;
+  background-color: var(--color-gold);
   margin: 3px 0;
   transition: 0.3s;
 }
@@ -98,9 +108,9 @@
     left: -100%;
     width: 100%;
     height: calc(100vh - 80px);
-    background-color: white;
+    background-color: var(--color-bg);
     transition: left 0.3s;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    box-shadow: 2px 0 5px rgba(227, 201, 123, 0.1);
   }
 
   .nav-open {

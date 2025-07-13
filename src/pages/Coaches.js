@@ -181,7 +181,7 @@ const Coaches = () => {
           <div className="philosophy-content">
             <div className="philosophy-text">
               <h2>Our Coaching Philosophy</h2>
-              <p>At Premier Soccer Training, we believe in developing complete soccer players through a comprehensive approach that focuses on:</p>
+              <p>At GSS, we believe in developing complete soccer players through a comprehensive approach that focuses on:</p>
               <div className="philosophy-points">
                 <div className="philosophy-point">
                   <h3>Technical Excellence</h3>

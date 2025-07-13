@@ -1,6 +1,6 @@
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: var(--color-bg);
   padding: 80px 0;
 }
 
@@ -14,13 +14,13 @@
 .hero-text h1 {
   font-size: 3rem;
   font-weight: 700;
-  color: #333;
+  color: var(--color-gold);
   margin-bottom: 20px;
 }
 
 .hero-text p {
   font-size: 1.2rem;
-  color: #666;
+  color: var(--color-cream);
   margin-bottom: 30px;
   line-height: 1.6;
 }
@@ -32,7 +32,7 @@
 
 .hero-features li {
   padding: 8px 0;
-  color: #555;
+  color: var(--color-gold);
   position: relative;
   padding-left: 25px;
 }
@@ -41,19 +41,20 @@
   content: "✓";
   position: absolute;
   left: 0;
-  color: #28a745;
+  color: var(--color-yellow);
   font-weight: bold;
 }
 
 .hero-image img {
   width: 100%;
   border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(227, 201, 123, 0.15);
+  background: var(--color-bg);
 }
 
 /* How It Works Section */
 .how-it-works {
-  background-color: white;
+  background-color: var(--color-dark);
 }
 
 .steps {
@@ -67,19 +68,21 @@
   text-align: center;
   padding: 30px;
   border-radius: 10px;
-  background: #f8f9fa;
+  background: var(--color-bg);
   transition: transform 0.3s;
+  border: 1px solid var(--color-gold);
 }
 
 .step:hover {
   transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(227, 201, 123, 0.15);
 }
 
 .step-number {
   width: 60px;
   height: 60px;
-  background: #007bff;
-  color: white;
+  background: var(--color-gold);
+  color: var(--color-bg);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -92,17 +95,17 @@
 .step h3 {
   font-size: 1.5rem;
   margin-bottom: 15px;
-  color: #333;
+  color: var(--color-gold);
 }
 
 .step p {
-  color: #666;
+  color: var(--color-cream);
   line-height: 1.6;
 }
 
 /* Why Train With Us Section */
 .why-train {
-  background: #f8f9fa;
+  background: var(--color-bg);
 }
 
 .why-train-content {
@@ -115,12 +118,12 @@
 .why-train-text h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #333;
+  color: var(--color-gold);
 }
 
 .why-train-text p {
   font-size: 1.1rem;
-  color: #666;
+  color: var(--color-cream);
   line-height: 1.6;
   margin-bottom: 30px;
 }
@@ -128,12 +131,13 @@
 .why-train-image img {
   width: 100%;
   border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(227, 201, 123, 0.15);
+  background: var(--color-bg);
 }
 
 /* Features Grid */
 .features {
-  background-color: white;
+  background-color: var(--color-dark);
 }
 
 .features-grid {
@@ -146,28 +150,30 @@
   text-align: center;
   padding: 30px;
   border-radius: 10px;
-  background: #f8f9fa;
+  background: var(--color-bg);
   transition: transform 0.3s;
+  border: 1px solid var(--color-gold);
 }
 
 .feature:hover {
   transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(227, 201, 123, 0.15);
 }
 
 .feature h3 {
   font-size: 1.3rem;
   margin-bottom: 15px;
-  color: #333;
+  color: var(--color-gold);
 }
 
 .feature p {
-  color: #666;
+  color: var(--color-cream);
   line-height: 1.6;
 }
 
 /* Testimonials Section */
 .testimonials {
-  background: #f8f9fa;
+  background: var(--color-bg);
 }
 
 .testimonials-grid {
@@ -177,16 +183,17 @@
 }
 
 .testimonial {
-  background: white;
+  background: var(--color-dark);
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(227, 201, 123, 0.10);
+  border: 1px solid var(--color-gold);
 }
 
 .testimonial-content p {
   font-style: italic;
   font-size: 1.1rem;
-  color: #555;
+  color: var(--color-cream);
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -198,18 +205,18 @@
 }
 
 .testimonial-author strong {
-  color: #333;
+  color: var(--color-gold);
   font-size: 1.1rem;
 }
 
 .testimonial-author span {
-  color: #666;
+  color: var(--color-yellow);
   font-size: 0.9rem;
 }
 
 /* Methodology Section */
 .methodology {
-  background-color: white;
+  background-color: var(--color-dark);
 }
 
 .methodology-content {
@@ -222,24 +229,25 @@
 .methodology-image img {
   width: 100%;
   border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(227, 201, 123, 0.15);
+  background: var(--color-bg);
 }
 
 .methodology-text h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #333;
+  color: var(--color-gold);
 }
 
 .methodology-text p {
   font-size: 1.1rem;
-  color: #666;
+  color: var(--color-cream);
   line-height: 1.6;
 }
 
 /* Contact Section */
 .contact {
-  background: #f8f9fa;
+  background: var(--color-bg);
 }
 
 .contact-content {
@@ -251,18 +259,18 @@
 .contact-info h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #333;
+  color: var(--color-gold);
 }
 
 .contact-info p {
   font-size: 1.1rem;
-  color: #666;
+  color: var(--color-cream);
   line-height: 1.6;
   margin-bottom: 20px;
 }
 
 .contact-info a {
-  color: #007bff;
+  color: var(--color-yellow);
   text-decoration: none;
 }
 
@@ -271,16 +279,17 @@
 }
 
 .contact-form {
-  background: white;
+  background: var(--color-dark);
   padding: 40px;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(227, 201, 123, 0.10);
+  border: 1px solid var(--color-gold);
 }
 
 .contact-form h3 {
   font-size: 1.5rem;
   margin-bottom: 30px;
-  color: #333;
+  color: var(--color-gold);
   text-align: center;
 }
 
@@ -292,16 +301,18 @@
 .form-group textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--color-gold);
   border-radius: 5px;
   font-size: 16px;
+  background: var(--color-bg);
+  color: var(--color-gold);
   transition: border-color 0.3s;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #007bff;
+  border-color: var(--color-yellow);
 }
 
 .form-group textarea {
@@ -309,7 +320,6 @@
   min-height: 120px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .hero-content,
   .why-train-content,
@@ -318,23 +328,18 @@
     grid-template-columns: 1fr;
     gap: 40px;
   }
-
   .hero-text h1 {
     font-size: 2.5rem;
   }
-
   .steps {
     grid-template-columns: 1fr;
   }
-
   .features-grid {
     grid-template-columns: 1fr;
   }
-
   .testimonials-grid {
     grid-template-columns: 1fr;
   }
-
   .contact-form {
     padding: 30px 20px;
   }
@@ -344,15 +349,12 @@
   .hero {
     padding: 60px 0;
   }
-
   .hero-text h1 {
     font-size: 2rem;
   }
-
   .section {
     padding: 40px 0;
   }
-
   .section-title {
     font-size: 2rem;
   }

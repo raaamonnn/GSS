@@ -1,7 +1,7 @@
 /* Coaches Hero */
 .coaches-hero {
-  background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
-  color: white;
+  background: var(--color-bg);
+  color: var(--color-gold);
   padding: 80px 0;
   text-align: center;
 }
@@ -10,16 +10,18 @@
   font-size: 3rem;
   margin-bottom: 20px;
   font-weight: 700;
+  color: var(--color-gold);
 }
 
 .coaches-hero p {
   font-size: 1.2rem;
+  color: var(--color-cream);
   opacity: 0.9;
 }
 
 /* Coaches Grid */
 .coaches-grid {
-  background-color: white;
+  background-color: var(--color-dark);
 }
 
 .coaches-list {
@@ -29,21 +31,23 @@
 }
 
 .coach-card {
-  background: white;
+  background: var(--color-bg);
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(227, 201, 123, 0.10);
   transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid var(--color-gold);
 }
 
 .coach-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  box-shadow: 0 20px 40px rgba(227, 201, 123, 0.15);
 }
 
 .coach-image {
   height: 300px;
   overflow: hidden;
+  background: var(--color-bg);
 }
 
 .coach-image img {
@@ -51,6 +55,7 @@
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s;
+  background: var(--color-bg);
 }
 
 .coach-card:hover .coach-image img {
@@ -64,18 +69,18 @@
 .coach-content h3 {
   font-size: 1.8rem;
   margin-bottom: 5px;
-  color: #333;
+  color: var(--color-gold);
 }
 
 .coach-title {
-  color: #6c5ce7;
+  color: var(--color-yellow);
   font-weight: 600;
   font-size: 1.1rem;
   margin-bottom: 15px;
 }
 
 .coach-content p {
-  color: #666;
+  color: var(--color-cream);
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -87,7 +92,7 @@
 .coach-credentials h4 {
   font-size: 1.1rem;
   margin-bottom: 10px;
-  color: #333;
+  color: var(--color-gold);
 }
 
 .coach-credentials ul {
@@ -98,7 +103,7 @@
 
 .coach-credentials li {
   padding: 5px 0;
-  color: #555;
+  color: var(--color-gold);
   position: relative;
   padding-left: 20px;
 }
@@ -107,30 +112,30 @@
   content: "•";
   position: absolute;
   left: 0;
-  color: #6c5ce7;
+  color: var(--color-yellow);
   font-weight: bold;
 }
 
 .coach-specialties h4 {
   font-size: 1.1rem;
   margin-bottom: 10px;
-  color: #333;
+  color: var(--color-gold);
 }
 
 .specialty-tag {
   display: inline-block;
-  background: #f8f9fa;
-  color: #6c5ce7;
+  background: var(--color-dark);
+  color: var(--color-yellow);
   padding: 5px 12px;
   border-radius: 20px;
   font-size: 0.9rem;
   margin: 5px 5px 5px 0;
-  border: 1px solid #e9ecef;
+  border: 1px solid var(--color-gold);
 }
 
 /* Coaching Philosophy */
 .coaching-philosophy {
-  background: #f8f9fa;
+  background: var(--color-bg);
 }
 
 .philosophy-content {
@@ -143,12 +148,12 @@
 .philosophy-text h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #333;
+  color: var(--color-gold);
 }
 
 .philosophy-text > p {
   font-size: 1.1rem;
-  color: #666;
+  color: var(--color-cream);
   line-height: 1.6;
   margin-bottom: 30px;
 }
@@ -161,23 +166,24 @@
 .philosophy-point h3 {
   font-size: 1.3rem;
   margin-bottom: 10px;
-  color: #333;
+  color: var(--color-gold);
 }
 
 .philosophy-point p {
-  color: #666;
+  color: var(--color-cream);
   line-height: 1.6;
 }
 
 .philosophy-image img {
   width: 100%;
   border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(227, 201, 123, 0.15);
+  background: var(--color-bg);
 }
 
 /* Why Choose Our Coaches */
 .why-choose-coaches {
-  background-color: white;
+  background-color: var(--color-dark);
 }
 
 .reasons-grid {
@@ -190,9 +196,10 @@
 .reason {
   text-align: center;
   padding: 30px;
-  background: #f8f9fa;
+  background: var(--color-bg);
   border-radius: 10px;
   transition: transform 0.3s;
+  border: 1px solid var(--color-gold);
 }
 
 .reason:hover {
@@ -202,23 +209,24 @@
 .reason-icon {
   font-size: 3rem;
   margin-bottom: 20px;
+  color: var(--color-yellow);
 }
 
 .reason h3 {
   font-size: 1.3rem;
   margin-bottom: 15px;
-  color: #333;
+  color: var(--color-gold);
 }
 
 .reason p {
-  color: #666;
+  color: var(--color-cream);
   line-height: 1.6;
 }
 
 /* Coaches CTA */
 .coaches-cta {
-  background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
-  color: white;
+  background: var(--color-dark);
+  color: var(--color-gold);
 }
 
 .cta-content {
@@ -228,24 +236,27 @@
 .cta-content h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
+  color: var(--color-gold);
 }
 
 .cta-content p {
   font-size: 1.1rem;
   margin-bottom: 30px;
+  color: var(--color-cream);
   opacity: 0.9;
 }
 
 .cta-content .btn {
-  background-color: white;
-  color: #6c5ce7;
+  background-color: var(--color-gold);
+  color: var(--color-bg);
   font-weight: 600;
   padding: 15px 30px;
   font-size: 1.1rem;
 }
 
 .cta-content .btn:hover {
-  background-color: #f8f9fa;
+  background-color: var(--color-cream);
+  color: var(--color-bg);
   transform: translateY(-2px);
 }
 
