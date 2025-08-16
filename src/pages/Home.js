@@ -47,7 +47,11 @@ const Home = () => {
               <a href="#signup" className="cta-button">Claim Your Free Session</a>
             </div>
             <div className="hero-image">
-              <img src={`${process.env.PUBLIC_URL}/images/istockphoto-520218721-612x612.jpg`} alt="Soccer Training" />
+              <img 
+                src={`${process.env.PUBLIC_URL}/images/alliance-football-club-TPF963E7G88-unsplash.jpg`} 
+                alt="Youth soccer training session with coach and players on field" 
+                style={{ width: '100%', height: 'auto', borderRadius: '10px' }}
+              />
             </div>
           </div>
         </div>
@@ -64,16 +68,40 @@ const Home = () => {
               <div className="step-number">1</div>
               <h3>Select A Program</h3>
               <p>Choose a program that works best for you and your athlete.</p>
+              <div className="step-image">
+                <img 
+                  src={`${process.env.PUBLIC_URL}/images/pexels-laura-rincon-318039951-16304162.jpg`} 
+                  alt="Soccer training equipment and gear selection" 
+                  style={{ width: '100%', height: 'auto', borderRadius: '8px' }}
+                  loading="lazy"
+                />
+              </div>
             </div>
             <div className="step">
               <div className="step-number">2</div>
               <h3>Book Online</h3>
               <p>Pick a day that works best for you directly on our website.</p>
+              <div className="step-image">
+                <img 
+                  src={`${process.env.PUBLIC_URL}/images/pexels-kampus-8941567.jpg`} 
+                  alt="Small group soccer scrimmage on training field" 
+                  style={{ width: '100%', height: 'auto', borderRadius: '8px' }}
+                  loading="lazy"
+                />
+              </div>
             </div>
             <div className="step">
               <div className="step-number">3</div>
               <h3>Watch Your Athlete Progress</h3>
               <p>Stand by as a proud parent as your athlete becomes better every session.</p>
+              <div className="step-image">
+                <img 
+                  src={`${process.env.PUBLIC_URL}/images/pexels-kampus-8941650.jpg`} 
+                  alt="Goalkeeper training drill focusing on positioning and reflexes" 
+                  style={{ width: '100%', height: 'auto', borderRadius: '8px' }}
+                  loading="lazy"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -89,7 +117,12 @@ const Home = () => {
               <a href="/book" className="btn btn-primary">Book a Session</a>
             </div>
             <div className="why-train-image">
-              <img src={`${process.env.PUBLIC_URL}/images/pexels-markusspiske-114296.jpg`} alt="Soccer Training" />
+              <img 
+                src={`${process.env.PUBLIC_URL}/images/kenny-eliason-otYC4eoGJGg-unsplash.jpg`} 
+                alt="Soccer players practicing footwork drills with cones and training equipment" 
+                style={{ width: '100%', height: 'auto', borderRadius: '10px' }}
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
@@ -100,11 +133,49 @@ const Home = () => {
         <div className="container">
           <div className="methodology-content">
             <div className="methodology-image">
-              <img src={`${process.env.PUBLIC_URL}/images/pexels-anastasia-shuraeva-9519537.jpg`} alt="Premier Team" />
+              <img 
+                src={`${process.env.PUBLIC_URL}/images/aleksandar-andreev-ZLFcqm26mgI-unsplash.jpg`} 
+                alt="Coach providing personalized feedback during youth soccer training session" 
+                style={{ width: '100%', height: 'auto', borderRadius: '10px' }}
+                loading="lazy"
+              />
             </div>
             <div className="methodology-text">
               <h2>OUR METHODOLOGY</h2>
               <p>Our proven training methodology focuses on developing complete soccer players through personalized coaching, technical skill development, tactical understanding, and physical conditioning.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Training Gallery Section */}
+      <section className="training-gallery section">
+        <div className="container">
+          <h2 className="section-title">Training in Action</h2>
+          <div className="gallery-grid">
+            <div className="gallery-item">
+              <img 
+                src={`${process.env.PUBLIC_URL}/images/james-lee-0axqBrI8Or4-unsplash.jpg`} 
+                alt="Youth soccer players practicing dribbling drills" 
+                style={{ width: '100%', height: 'auto', borderRadius: '8px' }}
+                loading="lazy"
+              />
+            </div>
+            <div className="gallery-item">
+              <img 
+                src={`${process.env.PUBLIC_URL}/images/kenny-eliason-AvcBDbR-LWc-unsplash.jpg`} 
+                alt="Soccer training session with focus on ball control" 
+                style={{ width: '100%', height: 'auto', borderRadius: '8px' }}
+                loading="lazy"
+              />
+            </div>
+            <div className="gallery-item">
+              <img 
+                src={`${process.env.PUBLIC_URL}/images/debra-brewster-XRlGy3N-REw-unsplash.jpg`} 
+                alt="Young soccer player practicing shooting technique" 
+                style={{ width: '100%', height: 'auto', borderRadius: '8px' }}
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
