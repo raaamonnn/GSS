@@ -44,7 +44,7 @@ const Home = () => {
             <div className="hero-text">
               <h1>Train the German Way — in Orange County</h1>
               <p>Elite soccer fundamentals with European structure, led by a UEFA-certified coach. First session is FREE.</p>
-              <a href="#signup" className="cta-button">Claim Your Free Session</a>
+              <a href="https://docs.google.com/forms/d/1TfOOKB2NfErY2DAALDHZEL9XfHyeTiDpbBSlDIp5tL0/viewform" className="cta-button" target="_blank" rel="noopener noreferrer">Claim Your Free Session</a>
             </div>
             <div className="hero-image">
               <img 
@@ -67,7 +67,7 @@ const Home = () => {
             <div className="step">
               <div className="step-number">1</div>
               <h3>Select A Program</h3>
-              <p>Choose a program that works best for you and your athlete.</p>
+              <p>Choose from our proven training programs designed for every skill level and age group.</p>
               <div className="step-image">
                 <img 
                   src={`${process.env.PUBLIC_URL}/images/pexels-laura-rincon-318039951-16304162.jpg`} 
@@ -80,20 +80,20 @@ const Home = () => {
             <div className="step">
               <div className="step-number">2</div>
               <h3>Book Online</h3>
-              <p>Pick a day that works best for you directly on our website.</p>
+              <p>Reserve your session through our easy online booking system with flexible scheduling options.</p>
               <div className="step-image">
-                <img 
-                  src={`${process.env.PUBLIC_URL}/images/pexels-kampus-8941567.jpg`} 
-                  alt="Small group soccer scrimmage on training field" 
-                  style={{ width: '100%', height: 'auto', borderRadius: '8px' }}
-                  loading="lazy"
-                />
+              <img 
+                src={`${process.env.PUBLIC_URL}/images/kenny-eliason-AvcBDbR-LWc-unsplash.jpg`} 
+                alt="Soccer training session with focus on ball control" 
+                style={{ width: '100%', height: 'auto', borderRadius: '8px' }}
+                loading="lazy"
+              />
               </div>
             </div>
             <div className="step">
               <div className="step-number">3</div>
               <h3>Watch Your Athlete Progress</h3>
-              <p>Stand by as a proud parent as your athlete becomes better every session.</p>
+              <p>See measurable improvement in skills, confidence, and game understanding with every training session.</p>
               <div className="step-image">
                 <img 
                   src={`${process.env.PUBLIC_URL}/images/pexels-kampus-8941650.jpg`} 
@@ -113,8 +113,8 @@ const Home = () => {
           <div className="why-train-content">
             <div className="why-train-text">
               <h2>Why Train With Us?</h2>
-              <p>We strive to provide you with the best service in Orange County. Our mission is to make your athlete better by giving them the training they deserve. All of our Trainers come with a 100% satisfaction guarantee. If you are still not convinced, read some of our reviews below.</p>
-              <a href="/book" className="btn btn-primary">Book a Session</a>
+              <p>We bring European soccer excellence to Orange County. Our mission is to develop complete soccer players through proven German methodology, personalized coaching, and a commitment to excellence. Every trainer comes with a 100% satisfaction guarantee.</p>
+              <a href="https://docs.google.com/forms/d/1TfOOKB2NfErY2DAALDHZEL9XfHyeTiDpbBSlDIp5tL0/viewform" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Book a Session</a>
             </div>
             <div className="why-train-image">
               <img 
@@ -142,7 +142,7 @@ const Home = () => {
             </div>
             <div className="methodology-text">
               <h2>OUR METHODOLOGY</h2>
-              <p>Our proven training methodology focuses on developing complete soccer players through personalized coaching, technical skill development, tactical understanding, and physical conditioning.</p>
+              <p>Our proven German training methodology develops complete soccer players through structured progression: technical mastery, tactical intelligence, physical conditioning, and mental resilience. Each player receives personalized attention to maximize their potential.</p>
             </div>
           </div>
         </div>
@@ -152,28 +152,27 @@ const Home = () => {
       <section className="training-gallery section">
         <div className="container">
           <h2 className="section-title">Training in Action</h2>
+          <p className="text-center mb-5">See our German methodology in practice with real training sessions</p>
           <div className="gallery-grid">
             <div className="gallery-item">
               <img 
                 src={`${process.env.PUBLIC_URL}/images/james-lee-0axqBrI8Or4-unsplash.jpg`} 
                 alt="Youth soccer players practicing dribbling drills" 
-                style={{ width: '100%', height: 'auto', borderRadius: '8px' }}
                 loading="lazy"
               />
             </div>
             <div className="gallery-item">
-              <img 
-                src={`${process.env.PUBLIC_URL}/images/kenny-eliason-AvcBDbR-LWc-unsplash.jpg`} 
-                alt="Soccer training session with focus on ball control" 
-                style={{ width: '100%', height: 'auto', borderRadius: '8px' }}
-                loading="lazy"
-              />
+
+                              <img 
+                  src={`${process.env.PUBLIC_URL}/images/pexels-kampus-8941567.jpg`} 
+                  alt="Small group soccer scrimmage on training field" 
+                  loading="lazy"
+                />
             </div>
             <div className="gallery-item">
               <img 
                 src={`${process.env.PUBLIC_URL}/images/debra-brewster-XRlGy3N-REw-unsplash.jpg`} 
                 alt="Young soccer player practicing shooting technique" 
-                style={{ width: '100%', height: 'auto', borderRadius: '8px' }}
                 loading="lazy"
               />
             </div>
@@ -187,9 +186,9 @@ const Home = () => {
           <div className="contact-content">
             <div className="contact-info">
               <h2>Still Have Questions?</h2>
-              <p>Reach out to us and a dedicated person from our team will help answer all of your questions!</p>
-              <p>Email us at <a href="mailto:info@premier-soccertraining.com">info@premier-soccertraining.com</a> or call us at <a href="tel:949.537.6465">949.537.6465</a>.</p>
-              <a href="/book" className="btn btn-primary">BOOK YOUR SESSION</a>
+              <p>Our team is here to help! Get personalized answers about our programs, training approach, and how we can help your athlete excel.</p>
+              <p>Email us at <a href="mailto:gss.oc@gmail.com">gss.oc@gmail.com</a> or call us at <a href="tel:949.537.6465">949.537.6465</a>.</p>
+              <a href="https://docs.google.com/forms/d/1TfOOKB2NfErY2DAALDHZEL9XfHyeTiDpbBSlDIp5tL0/viewform" className="btn btn-primary" target="_blank" rel="noopener noreferrer">BOOK YOUR SESSION</a>
             </div>
             <div className="contact-form">
               <h3>CONTACT US HERE</h3>

@@ -18,7 +18,7 @@ const Programs = () => {
           <div className="programs-list">
             <div className="program-card">
               <div className="program-image">
-                <img src="/images/private-training.jpg" alt="Private Training" />
+                <img src={`${process.env.PUBLIC_URL}/images/pexels-anastasia-shuraeva-9519537.jpg`} alt="Private Training - One-on-one coaching session" />
               </div>
               <div className="program-content">
                 <h3>Private Training ($150)</h3>
@@ -29,13 +29,13 @@ const Programs = () => {
                   <li>Flexible scheduling</li>
                   <li>Progress tracking</li>
                 </ul>
-                <a href="/book" className="btn btn-primary">Book Private Session</a>
+                <a href="https://docs.google.com/forms/d/1TfOOKB2NfErY2DAALDHZEL9XfHyeTiDpbBSlDIp5tL0/viewform" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Book Private Session</a>
               </div>
             </div>
 
             <div className="program-card">
               <div className="program-image">
-                <img src="/images/group-training.jpg" alt="Group Training" />
+                <img src={`${process.env.PUBLIC_URL}/images/pexels-markusspiske-114296.jpg`} alt="Group Training - Team training session" />
               </div>
               <div className="program-content">
                 <h3>Group Training ($50)</h3>
@@ -45,7 +45,24 @@ const Programs = () => {
                   <li>Competitive environment</li>
                   <li>Cost-effective option</li>
                 </ul>
-                <a href="/book" className="btn btn-primary">Join Group Session</a>
+                <a href="https://docs.google.com/forms/d/1TfOOKB2NfErY2DAALDHZEL9XfHyeTiDpbBSlDIp5tL0/viewform" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Join Group Session</a>
+              </div>
+            </div>
+
+            <div className="program-card">
+              <div className="program-image">
+                <img src={`${process.env.PUBLIC_URL}/images/pexels-kampus-8813564.jpg`} alt="Youth Development Program - Young players learning fundamentals" />
+              </div>
+              <div className="program-content">
+                <h3>Youth Development ($75)</h3>
+                <p>Specialized training for young players ages 4-12, focusing on fundamentals and fun.</p>
+                <ul>
+                  <li>Age-appropriate training</li>
+                  <li>Fun learning environment</li>
+                  <li>Basic skill development</li>
+                  <li>Confidence building</li>
+                </ul>
+                <a href="https://docs.google.com/forms/d/1TfOOKB2NfErY2DAALDHZEL9XfHyeTiDpbBSlDIp5tL0/viewform" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Enroll Youth Program</a>
               </div>
             </div>
           </div>
@@ -83,7 +100,7 @@ const Programs = () => {
           <div className="cta-content">
             <h2>Ready to Get Started?</h2>
             <p>Book your first session today and see the difference GSS can make in your athlete's development.</p>
-            <a href="/book" className="btn btn-primary">Book Your Session Now</a>
+            <a href="https://docs.google.com/forms/d/1TfOOKB2NfErY2DAALDHZEL9XfHyeTiDpbBSlDIp5tL0/viewform" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Book Your Session Now</a>
           </div>
         </div>
       </section>

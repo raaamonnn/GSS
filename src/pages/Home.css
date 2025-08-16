@@ -142,6 +142,8 @@ html {
 
 .hero-image img {
   width: 100%;
+  height: 360px;
+  object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 10px 30px rgba(227, 201, 123, 0.15);
   background: var(--color-bg);
@@ -198,6 +200,25 @@ html {
   line-height: 1.6;
 }
 
+.step-image {
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.step-image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.step:hover .step-image img {
+  transform: scale(1.05);
+}
+
 /* Why Train With Us Section */
 .why-train {
   background: var(--color-bg);
@@ -225,6 +246,8 @@ html {
 
 .why-train-image img {
   width: 100%;
+  height: 280px;
+  object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 10px 30px rgba(227, 201, 123, 0.15);
   background: var(--color-bg);
@@ -323,6 +346,8 @@ html {
 
 .methodology-image img {
   width: 100%;
+  height: 280px;
+  object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 10px 30px rgba(227, 201, 123, 0.15);
   background: var(--color-bg);
@@ -373,6 +398,11 @@ html {
   text-decoration: underline;
 }
 
+.contact-info a.btn {
+  color: black;
+  text-decoration: none;
+}
+
 /* Training Gallery Section */
 .training-gallery {
   background: var(--color-bg);
@@ -385,13 +415,22 @@ html {
   margin-top: 40px;
 }
 
+.gallery-grid .text-center {
+  margin-bottom: 40px;
+}
+
 .gallery-item {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 8px 32px rgba(227, 201, 123, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background: var(--color-bg);
   border: 1px solid var(--color-gold);
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  background: none;
+  height: 260px;
+  padding: 0;
 }
 
 .gallery-item:hover {
@@ -400,6 +439,10 @@ html {
 }
 
 .gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
   transition: transform 0.3s ease;
 }
 
@@ -503,5 +546,26 @@ html {
   .gallery-grid {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+  
+  /* Responsive image heights for mobile */
+  .hero-image img {
+    height: 220px;
+  }
+  
+  .why-train-image img,
+  .methodology-image img {
+    height: 180px;
+  }
+  
+  .step-image img {
+    height: 140px;
+  }
+  
+  .gallery-item {
+    height: 180px;
+  }
+  .gallery-item img {
+    height: 100%;
   }
 } 

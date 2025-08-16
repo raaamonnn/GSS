@@ -176,6 +176,8 @@
 
 .philosophy-image img {
   width: 100%;
+  height: 280px;
+  object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 10px 30px rgba(227, 201, 123, 0.15);
   background: var(--color-bg);
@@ -299,6 +301,10 @@
 
   .coach-image {
     height: 250px;
+  }
+  
+  .philosophy-image img {
+    height: 180px;
   }
 
   .philosophy-text h2 {

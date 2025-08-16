@@ -31,7 +31,7 @@ const Header = () => {
             <div className="contact-info">
               <a href="tel:949.537.6465" className="phone">949.537.6465</a>
             </div>
-            <Link to="/book" className="btn btn-primary">Book a Session</Link>
+            <a href="https://docs.google.com/forms/d/1TfOOKB2NfErY2DAALDHZEL9XfHyeTiDpbBSlDIp5tL0/viewform" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Book a Session</a>
             <button className="mobile-menu-btn" onClick={toggleMenu}>
               <span></span>
               <span></span>

@@ -7,8 +7,8 @@ const Coaches = () => {
       {/* Hero Section */}
       <section className="coaches-hero">
         <div className="container">
-          <h1>Meet Our Coaches</h1>
-          <p>Highly qualified and experienced trainers dedicated to developing young athletes</p>
+                     <h1>Meet Our Coaches</h1>
+           <p>UEFA-certified professionals bringing European soccer excellence to Orange County</p>
         </div>
       </section>
 
@@ -131,29 +131,29 @@ const Coaches = () => {
           <div className="philosophy-content">
             <div className="philosophy-text">
               <h2>Our German Soccer School Philosophy</h2>
-              <p>At GSS, we follow the proven German methodology for developing complete soccer players through a comprehensive approach that focuses on:</p>
+                             <p>At GSS, we follow the proven German methodology that has produced world-class players. Our comprehensive approach develops complete soccer athletes through:</p>
               <div className="philosophy-points">
                 <div className="philosophy-point">
                   <h3>Technical Excellence</h3>
-                  <p>Mastering fundamental skills and advanced techniques through structured training programs.</p>
+                                     <p>Building rock-solid fundamentals and advanced techniques through progressive, structured training programs.</p>
                 </div>
                 <div className="philosophy-point">
                   <h3>Tactical Understanding</h3>
-                  <p>Developing game intelligence and decision-making abilities on and off the ball.</p>
+                                     <p>Teaching players to read the game, make smart decisions, and understand tactical positioning.</p>
                 </div>
                 <div className="philosophy-point">
                   <h3>Physical Development</h3>
-                  <p>Building strength, speed, agility, and endurance through soccer-specific conditioning.</p>
+                                     <p>Developing soccer-specific fitness: speed, agility, endurance, and explosive power for peak performance.</p>
                 </div>
                 <div className="philosophy-point">
                   <h3>Mental Toughness</h3>
-                  <p>Cultivating confidence, resilience, and a winning mindset in every player.</p>
+                                     <p>Building mental toughness, confidence, and the competitive spirit needed to succeed at every level.</p>
                 </div>
               </div>
             </div>
-            <div className="philosophy-image">
-              <img src="/images/coaching-philosophy.jpg" alt="Coaching Philosophy" />
-            </div>
+                         <div className="philosophy-image">
+               <img src={`${process.env.PUBLIC_URL}/images/julio-pacheco-Pe3XvUYCZAQ-unsplash.jpg`} alt="Coaching Philosophy - Coach working with young players" />
+             </div>
           </div>
         </div>
       </section>
@@ -165,8 +165,8 @@ const Coaches = () => {
           <div className="reasons-grid">
             <div className="reason">
               <div className="reason-icon">🎓</div>
-              <h3>Highly Qualified</h3>
-              <p>All coaches hold professional licenses and certifications from recognized soccer organizations.</p>
+                             <h3>UEFA Certified</h3>
+               <p>Our coaches hold professional licenses and certifications from recognized European soccer organizations.</p>
             </div>
             <div className="reason">
               <div className="reason-icon">❤️</div>
@@ -175,8 +175,8 @@ const Coaches = () => {
             </div>
             <div className="reason">
               <div className="reason-icon">📈</div>
-              <h3>Proven Results</h3>
-              <p>Track record of developing players who excel at club, high school, and college levels.</p>
+                             <h3>Proven Results</h3>
+               <p>Track record of developing players who excel at club, high school, college, and professional levels.</p>
             </div>
             <div className="reason">
               <div className="reason-icon">🤝</div>
@@ -192,8 +192,8 @@ const Coaches = () => {
         <div className="container">
           <div className="cta-content">
             <h2>Ready to Train the German Way?</h2>
-            <p>Book a session with our UEFA-certified coaching team and experience the difference that European methodology makes in your athlete's development.</p>
-            <a href="/book" className="btn btn-primary">Book Your Training Session</a>
+                         <p>Book a session with our UEFA-certified coaching team and experience the world-class training that has produced European champions.</p>
+            <a href="https://docs.google.com/forms/d/1TfOOKB2NfErY2DAALDHZEL9XfHyeTiDpbBSlDIp5tL0/viewform" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Book Your Training Session</a>
           </div>
         </div>
       </section>
