@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './Home.css';
+import LogoSidebars from '../components/LogoSidebars';
 
 const Home = () => {
   useEffect(() => {
@@ -23,19 +24,7 @@ const Home = () => {
     <div className="home">
 
       
-      {/* Left GSS Logo Sidebar */}
-      <div className="logo-sidebar left-logo-sidebar">
-        <div className="scrolling-logo-container">
-          <img src={`${process.env.PUBLIC_URL}/images/gsslogo.webp`} alt="GSS Logo" className="scrolling-logo" />
-        </div>
-      </div>
-      
-      {/* Right GSS Logo Sidebar */}
-      <div className="logo-sidebar right-logo-sidebar">
-        <div className="scrolling-logo-container">
-          <img src={`${process.env.PUBLIC_URL}/images/gsslogo.webp`} alt="GSS Logo" className="scrolling-logo" />
-        </div>
-      </div>
+      <LogoSidebars />
       
       {/* Hero Section */}
       <section id="hero" className="hero">
@@ -114,7 +103,7 @@ const Home = () => {
             <div className="why-train-text">
               <h2>Why Train With Us?</h2>
               <p>We bring European soccer excellence to Orange County. Our mission is to develop complete soccer players through proven German methodology, personalized coaching, and a commitment to excellence. Every trainer comes with a 100% satisfaction guarantee.</p>
-              <a href="https://docs.google.com/forms/d/1TfOOKB2NfErY2DAALDHZEL9XfHyeTiDpbBSlDIp5tL0/viewform" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Book a Session</a>
+              <a href="https://docs.google.com/forms/d/1TfOOKB2NfErY2DAALDHZEL9XfHyeTiDpbBSlDIp5tL0/viewform" className="cta-button" target="_blank" rel="noopener noreferrer">Book a Session</a>
             </div>
             <div className="why-train-image">
               <img 
@@ -188,7 +177,7 @@ const Home = () => {
               <h2>Still Have Questions?</h2>
               <p>Our team is here to help! Get personalized answers about our programs, training approach, and how we can help your athlete excel.</p>
               <p>Email us at <a href="mailto:gss.oc@gmail.com">gss.oc@gmail.com</a> or call us at <a href="tel:949.537.6465">949.537.6465</a>.</p>
-              <a href="https://docs.google.com/forms/d/1TfOOKB2NfErY2DAALDHZEL9XfHyeTiDpbBSlDIp5tL0/viewform" className="btn btn-primary" target="_blank" rel="noopener noreferrer">BOOK YOUR SESSION</a>
+              <a href="https://docs.google.com/forms/d/1TfOOKB2NfErY2DAALDHZEL9XfHyeTiDpbBSlDIp5tL0/viewform" className="cta-button" target="_blank" rel="noopener noreferrer">BOOK YOUR SESSION</a>
             </div>
             <div className="contact-form">
               <h3>CONTACT US HERE</h3>

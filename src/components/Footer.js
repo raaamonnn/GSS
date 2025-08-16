@@ -28,8 +28,8 @@ const Footer = () => {
           <div className="footer-section">
             <h4>Services</h4>
             <ul>
-              <li>Private Training</li>
-              <li>Group Training</li>
+              <li><Link to="/programs#private-training" className="footer-link">Private Training</Link></li>
+              <li><Link to="/programs#group-training" className="footer-link">Group Training</Link></li>
             </ul>
           </div>
           
@@ -37,7 +37,7 @@ const Footer = () => {
             <h4>Connect With Us</h4>
             <div className="social-links">
               <a href="https://instagram.com/gss.oc" target="_blank" rel="noopener noreferrer" className="social-link">Instagram</a>
-              <a href="https://tiktok.com/gss.oc" target="_blank" rel="noopener noreferrer" className="social-link">TikTok</a>
+              <a href="https://www.tiktok.com/@gss.oc" target="_blank" rel="noopener noreferrer" className="social-link">TikTok</a>
             </div>
           </div>
         </div>

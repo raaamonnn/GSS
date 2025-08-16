@@ -7,15 +7,22 @@
 }
 
 .header-content {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  justify-content: space-between;
   padding: 15px 0;
+  position: relative;
 }
 
 .logo img {
   height: 80px;
   width: auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .nav-list {
@@ -24,6 +31,8 @@
   margin: 0;
   padding: 0;
   gap: 30px;
+  justify-content: center;
+  width: 100%;
 }
 
 .nav-list a {
@@ -50,6 +59,43 @@
   text-decoration: none;
   font-weight: 700;
   font-size: 16px;
+}
+
+.cta-button--nav {
+  background-color: var(--color-gold);
+  color: var(--color-bg);
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  line-height: 1;
+  margin-left: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button--nav:hover {
+  background-color: var(--color-cream);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border-color: var(--color-gold);
+}
+
+/* Ensure consistent button height in the header */
+.header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+  height: 100%;
+  margin-left: auto;
 }
 
 .btn-primary {
@@ -101,7 +147,11 @@
   transition: 0.3s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+  .header-content {
+    grid-template-columns: auto 1fr auto;
+  }
+  
   .nav {
     position: fixed;
     top: 80px;
@@ -111,6 +161,7 @@
     background-color: var(--color-bg);
     transition: left 0.3s;
     box-shadow: 2px 0 5px rgba(227, 201, 123, 0.1);
+    z-index: 1000;
   }
 
   .nav-open {
@@ -121,6 +172,7 @@
     flex-direction: column;
     padding: 20px;
     gap: 20px;
+    align-items: center;
   }
 
   .nav-list a {
@@ -131,13 +183,19 @@
 
   .mobile-menu-btn {
     display: flex;
+    margin-left: 15px;
   }
 
   .header-actions {
     gap: 10px;
+    justify-content: flex-end;
   }
 
   .contact-info {
     display: none;
   }
-} 
+  
+  .logo {
+    z-index: 1001;
+  }
+}

@@ -12,7 +12,7 @@
   position: fixed;
   top: 0;
   bottom: 0;
-  width: 400px;
+  width: 300px;
   background: rgba(24, 21, 17, 0.2);
   backdrop-filter: blur(5px);
   z-index: 100;
@@ -20,14 +20,15 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  transition: all 0.3s ease;
 }
 
 .left-logo-sidebar {
-  left: 120px;
+  left: 0;
 }
 
 .right-logo-sidebar {
-  right: 120px;
+  right: 0;
 }
 
 .scrolling-logo-container {
@@ -40,13 +41,14 @@
 }
 
 .scrolling-logo {
-  width: 380px;
+  width: 280px;
   height: auto;
   opacity: 0.6;
   filter: brightness(1.1);
   pointer-events: none;
   mix-blend-mode: screen;
   background: transparent;
+  transition: all 0.3s ease;
 }
 
 /* Scroll-based parallax for logos */
@@ -73,13 +75,6 @@ html {
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
-  position: relative;
-  z-index: 2;
-}
-
-.hero-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
 }
@@ -99,6 +94,7 @@ html {
 }
 
 .cta-button {
+  text-align: center;
   display: inline-block;
   background: var(--color-gold);
   color: var(--color-bg);
@@ -398,8 +394,13 @@ html {
   text-decoration: underline;
 }
 
-.contact-info a.btn {
+.contact-info a.cta-button {
   color: black;
+  text-decoration: none;
+}
+
+.contact-info a.cta-button:hover {
+  color: var(--color-yellow);
   text-decoration: none;
 }
 
@@ -492,24 +493,35 @@ html {
   min-height: 120px;
 }
 
+@media (max-width: 1799px) {
+  .logo-sidebar {
+    display: none; /* Hide sidebars when window is less than 1800px */
+  }
+}
+
+/* Keep the container padding adjustments for smaller screens */
+@media (max-width: 992px) {
+  .container {
+    padding: 0 25px;
+  }
+}
+
 @media (max-width: 768px) {
   .hero-content,
   .why-train-content,
   .methodology-content,
   .contact-content {
     grid-template-columns: 1fr;
-    gap: 40px;
-  }
-  .hero-text h1 {
-    font-size: 2.5rem;
-  }
-  /* Scale down logo sidebars on tablet */
-  .logo-sidebar {
-    width: 120px;
+    gap: 30px;
   }
   
-  .scrolling-logo {
-    width: 100px;
+  .hero-text h1 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
+  
+  .container {
+    padding: 0 20px;
   }
   .steps {
     grid-template-columns: 1fr;

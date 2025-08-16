@@ -201,7 +201,7 @@ const Gallery = () => {
           <div className="cta-content">
             <h2>Ready to Join the Fun?</h2>
             <p>Book your session today and become part of our GSS family!</p>
-            <a href="https://docs.google.com/forms/d/1TfOOKB2NfErY2DAALDHZEL9XfHyeTiDpbBSlDIp5tL0/viewform" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Book Your Session</a>
+            <a href="https://docs.google.com/forms/d/1TfOOKB2NfErY2DAALDHZEL9XfHyeTiDpbBSlDIp5tL0/viewform" className="cta-button" target="_blank" rel="noopener noreferrer">Book Your Session</a>
           </div>
         </div>
       </section>

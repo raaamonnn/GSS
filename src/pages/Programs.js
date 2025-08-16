@@ -1,9 +1,12 @@
 import React from 'react';
 import './Programs.css';
+import LogoSidebars from '../components/LogoSidebars';
+import { FaUserTie, FaUserCog, FaMedal, FaCalendarAlt } from 'react-icons/fa';
 
 const Programs = () => {
   return (
     <div className="programs">
+      <LogoSidebars />
       {/* Hero Section */}
       <section className="programs-hero">
         <div className="container">
@@ -16,7 +19,7 @@ const Programs = () => {
       <section className="programs-grid section">
         <div className="container">
           <div className="programs-list">
-            <div className="program-card">
+            <div id="private-training" className="program-card">
               <div className="program-image">
                 <img src={`${process.env.PUBLIC_URL}/images/pexels-anastasia-shuraeva-9519537.jpg`} alt="Private Training - One-on-one coaching session" />
               </div>
@@ -29,11 +32,11 @@ const Programs = () => {
                   <li>Flexible scheduling</li>
                   <li>Progress tracking</li>
                 </ul>
-                <a href="https://docs.google.com/forms/d/1TfOOKB2NfErY2DAALDHZEL9XfHyeTiDpbBSlDIp5tL0/viewform" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Book Private Session</a>
+                <a href="https://docs.google.com/forms/d/1TfOOKB2NfErY2DAALDHZEL9XfHyeTiDpbBSlDIp5tL0/viewform" className="cta-button cta-button--card" target="_blank" rel="noopener noreferrer">Book Private Session</a>
               </div>
             </div>
 
-            <div className="program-card">
+            <div id="group-training" className="program-card">
               <div className="program-image">
                 <img src={`${process.env.PUBLIC_URL}/images/pexels-markusspiske-114296.jpg`} alt="Group Training - Team training session" />
               </div>
@@ -44,27 +47,12 @@ const Programs = () => {
                   <li>Team building exercises</li>
                   <li>Competitive environment</li>
                   <li>Cost-effective option</li>
+                  <li>Cost-effective option</li>
                 </ul>
-                <a href="https://docs.google.com/forms/d/1TfOOKB2NfErY2DAALDHZEL9XfHyeTiDpbBSlDIp5tL0/viewform" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Join Group Session</a>
+                <a href="https://docs.google.com/forms/d/1TfOOKB2NfErY2DAALDHZEL9XfHyeTiDpbBSlDIp5tL0/viewform" className="cta-button cta-button--card" target="_blank" rel="noopener noreferrer">Join Group Session</a>
               </div>
             </div>
 
-            <div className="program-card">
-              <div className="program-image">
-                <img src={`${process.env.PUBLIC_URL}/images/pexels-kampus-8813564.jpg`} alt="Youth Development Program - Young players learning fundamentals" />
-              </div>
-              <div className="program-content">
-                <h3>Youth Development ($75)</h3>
-                <p>Specialized training for young players ages 4-12, focusing on fundamentals and fun.</p>
-                <ul>
-                  <li>Age-appropriate training</li>
-                  <li>Fun learning environment</li>
-                  <li>Basic skill development</li>
-                  <li>Confidence building</li>
-                </ul>
-                <a href="https://docs.google.com/forms/d/1TfOOKB2NfErY2DAALDHZEL9XfHyeTiDpbBSlDIp5tL0/viewform" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Enroll Youth Program</a>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -75,18 +63,30 @@ const Programs = () => {
           <h2 className="section-title">Why Choose Our Programs?</h2>
           <div className="benefits-grid">
             <div className="benefit">
+              <div className="benefit-icon">
+                <FaUserTie />
+              </div>
               <h3>Expert Coaches</h3>
               <p>All our trainers are highly qualified with extensive playing and coaching experience.</p>
             </div>
             <div className="benefit">
+              <div className="benefit-icon">
+                <FaUserCog />
+              </div>
               <h3>Personalized Approach</h3>
               <p>Every program is tailored to meet the individual needs and goals of each athlete.</p>
             </div>
             <div className="benefit">
+              <div className="benefit-icon">
+                <FaMedal />
+              </div>
               <h3>Proven Results</h3>
               <p>Our training methods have helped countless players reach their full potential.</p>
             </div>
             <div className="benefit">
+              <div className="benefit-icon">
+                <FaCalendarAlt />
+              </div>
               <h3>Flexible Scheduling</h3>
               <p>We offer convenient scheduling options to fit your busy lifestyle.</p>
             </div>
@@ -100,7 +100,7 @@ const Programs = () => {
           <div className="cta-content">
             <h2>Ready to Get Started?</h2>
             <p>Book your first session today and see the difference GSS can make in your athlete's development.</p>
-            <a href="https://docs.google.com/forms/d/1TfOOKB2NfErY2DAALDHZEL9XfHyeTiDpbBSlDIp5tL0/viewform" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Book Your Session Now</a>
+            <a href="https://docs.google.com/forms/d/1TfOOKB2NfErY2DAALDHZEL9XfHyeTiDpbBSlDIp5tL0/viewform" className="cta-button cta-button--card" target="_blank" rel="noopener noreferrer">Book Your Session Now</a>
           </div>
         </div>
       </section>

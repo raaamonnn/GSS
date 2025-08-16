@@ -1,9 +1,11 @@
 import React from 'react';
 import './Coaches.css';
+import LogoSidebars from '../components/LogoSidebars';
 
 const Coaches = () => {
   return (
     <div className="coaches">
+      <LogoSidebars />
       {/* Hero Section */}
       <section className="coaches-hero">
         <div className="container">
@@ -193,7 +195,7 @@ const Coaches = () => {
           <div className="cta-content">
             <h2>Ready to Train the German Way?</h2>
                          <p>Book a session with our UEFA-certified coaching team and experience the world-class training that has produced European champions.</p>
-            <a href="https://docs.google.com/forms/d/1TfOOKB2NfErY2DAALDHZEL9XfHyeTiDpbBSlDIp5tL0/viewform" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Book Your Training Session</a>
+            <a href="https://docs.google.com/forms/d/1TfOOKB2NfErY2DAALDHZEL9XfHyeTiDpbBSlDIp5tL0/viewform" className="cta-button" target="_blank" rel="noopener noreferrer">Book Your Training Session</a>
           </div>
         </div>
       </section>
