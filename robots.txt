@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://raaamonnn.github.io/GSS/sitemap.xml
