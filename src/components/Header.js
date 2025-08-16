@@ -15,7 +15,7 @@ const Header = () => {
         <div className="header-content">
           <div className="logo">
             <Link to="/">
-              <img src="/images/gss-logo.png" alt="GSS Logo" />
+              <img src={`${process.env.PUBLIC_URL}/images/gsslogo.webp`} alt="GSS Logo" />
             </Link>
           </div>
           
@@ -23,18 +23,15 @@ const Header = () => {
             <ul className="nav-list">
               <li><Link to="/" onClick={() => setIsMenuOpen(false)}>HOME</Link></li>
               <li><Link to="/programs" onClick={() => setIsMenuOpen(false)}>PROGRAMS</Link></li>
-              <li><Link to="/birthdays" onClick={() => setIsMenuOpen(false)}>BIRTHDAYS</Link></li>
               <li><Link to="/coaches" onClick={() => setIsMenuOpen(false)}>COACHES</Link></li>
-              <li><Link to="/gallery" onClick={() => setIsMenuOpen(false)}>GALLERY</Link></li>
             </ul>
           </nav>
 
           <div className="header-actions">
             <div className="contact-info">
-              <a href="tel:949.235.8720" className="phone">949.235.8720</a>
+              <a href="tel:949.537.6465" className="phone">949.537.6465</a>
             </div>
             <Link to="/book" className="btn btn-primary">Book a Session</Link>
-            <button className="login-btn">Log In</button>
             <button className="mobile-menu-btn" onClick={toggleMenu}>
               <span></span>
               <span></span>

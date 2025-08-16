@@ -11,8 +11,8 @@ const Footer = () => {
             <h3>GSS</h3>
             <p>Orange County based private soccer coaching, designed to equip kids to reach the highest levels in the game.</p>
             <div className="contact-info">
-              <p><strong>Phone:</strong> <a href="tel:949.235.8720">949.235.8720</a></p>
-              <p><strong>Email:</strong> <a href="mailto:info@premier-soccertraining.com">info@premier-soccertraining.com</a></p>
+              <p><strong>Phone:</strong> <a href="tel:949.235.8720">949.537.6465</a></p>
+              <p><strong>Email:</strong> <a href="mailto:gss.oc@gmail.com">gss.oc@gmail.com</a></p>
             </div>
           </div>
           
@@ -21,9 +21,7 @@ const Footer = () => {
             <ul>
               <li><Link to="/">Home</Link></li>
               <li><Link to="/programs">Programs</Link></li>
-              <li><Link to="/birthdays">Birthday Parties</Link></li>
-              <li><Link to="/coaches">Coaches</Link></li>
-              <li><Link to="/gallery">Gallery</Link></li>
+              <li><Link to="/coaches">Coaches</Link></li>            
             </ul>
           </div>
           
@@ -32,26 +30,14 @@ const Footer = () => {
             <ul>
               <li>Private Training</li>
               <li>Group Training</li>
-              <li>Soccer Camps</li>
-              <li>Team Training</li>
-              <li>Birthday Parties</li>
             </ul>
           </div>
           
           <div className="footer-section">
             <h4>Connect With Us</h4>
             <div className="social-links">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-link">Facebook</a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-link">Instagram</a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-link">Twitter</a>
-            </div>
-            <div className="newsletter">
-              <h5>Stay Updated</h5>
-              <p>Subscribe to our newsletter for training tips and updates.</p>
-              <form className="newsletter-form">
-                <input type="email" placeholder="Enter your email" />
-                <button type="submit">Subscribe</button>
-              </form>
+              <a href="https://instagram.com/gss.oc" target="_blank" rel="noopener noreferrer" className="social-link">Instagram</a>
+              <a href="https://tiktok.com/gss.oc" target="_blank" rel="noopener noreferrer" className="social-link">TikTok</a>
             </div>
           </div>
         </div>

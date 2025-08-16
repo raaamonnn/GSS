@@ -5,9 +5,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Programs from './pages/Programs';
-import Birthdays from './pages/Birthdays';
 import Coaches from './pages/Coaches';
-import Gallery from './pages/Gallery';
 
 function App() {
   return (
@@ -18,9 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/programs" element={<Programs />} />
-            <Route path="/birthdays" element={<Birthdays />} />
             <Route path="/coaches" element={<Coaches />} />
-            <Route path="/gallery" element={<Gallery />} />
           </Routes>
         </main>
         <Footer />

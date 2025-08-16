@@ -1,37 +1,60 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Home.css';
 
 const Home = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const logoContainers = document.querySelectorAll('.scrolling-logo-container');
+      
+      logoContainers.forEach((container) => {
+        // Both logos move cleanly with scroll direction
+        const speed = 0.05; // Very subtle, clean movement
+        const yPos = scrollY * speed;
+        container.style.transform = `translateY(${yPos}px)`;
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <div className="home">
+
+      
+      {/* Left GSS Logo Sidebar */}
+      <div className="logo-sidebar left-logo-sidebar">
+        <div className="scrolling-logo-container">
+          <img src={`${process.env.PUBLIC_URL}/images/gsslogo.webp`} alt="GSS Logo" className="scrolling-logo" />
+        </div>
+      </div>
+      
+      {/* Right GSS Logo Sidebar */}
+      <div className="logo-sidebar right-logo-sidebar">
+        <div className="scrolling-logo-container">
+          <img src={`${process.env.PUBLIC_URL}/images/gsslogo.webp`} alt="GSS Logo" className="scrolling-logo" />
+        </div>
+      </div>
+      
       {/* Hero Section */}
-      <section className="hero">
+      <section id="hero" className="hero">
         <div className="container">
           <div className="hero-content">
             <div className="hero-text">
-              <h1>German Soccer School</h1>
-              <p>Orange County based private soccer coaching, designed to equip kids to reach the highest levels in the game.</p>
-              <div className="hero-features">
-                <ul>
-                  <li>All trainers are highly qualified</li>
-                  <li>Our programs are tailored to your players training needs</li>
-                  <li>An ever innovating program</li>
-                  <li>Great communication and development feedback</li>
-                  <li>Injury preventative training</li>
-                  <li>Reliable and friendly trainers</li>
-                </ul>
-              </div>
-              <a href="/book" className="btn btn-primary">Book Your Session</a>
+              <h1>Train the German Way — in Orange County</h1>
+              <p>Elite soccer fundamentals with European structure, led by a UEFA-certified coach. First session is FREE.</p>
+              <a href="#signup" className="cta-button">Claim Your Free Session</a>
             </div>
             <div className="hero-image">
-              <img src="/images/8C6A8374.jpg" alt="Soccer Training" />
+              <img src={`${process.env.PUBLIC_URL}/images/istockphoto-520218721-612x612.jpg`} alt="Soccer Training" />
             </div>
           </div>
         </div>
       </section>
 
       {/* How It Works Section */}
-      <section className="how-it-works section">
+      <section id="how-it-works" className="how-it-works section">
         <div className="container">
           <h2 className="section-title">How It Works</h2>
           <p className="text-center mb-5">It's as easy as 1, 2, 3!</p>
@@ -66,74 +89,7 @@ const Home = () => {
               <a href="/book" className="btn btn-primary">Book a Session</a>
             </div>
             <div className="why-train-image">
-              <img src="/images/hand-670-copy.jpg" alt="Soccer Training" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Features Grid */}
-      <section className="features section">
-        <div className="container">
-          <div className="features-grid">
-            <div className="feature">
-              <h3>Saves You Time</h3>
-              <p>Convenient scheduling and flexible training options.</p>
-            </div>
-            <div className="feature">
-              <h3>Only The Best Trainers</h3>
-              <p>Highly qualified and experienced coaching staff.</p>
-            </div>
-            <div className="feature">
-              <h3>Cash-Free Payments</h3>
-              <p>Secure online payment processing.</p>
-            </div>
-            <div className="feature">
-              <h3>Effortless Rescheduling</h3>
-              <p>Easy session management and rescheduling.</p>
-            </div>
-            <div className="feature">
-              <h3>Health & Safety</h3>
-              <p>Prioritizing player safety and well-being.</p>
-            </div>
-            <div className="feature">
-              <h3>Best Customer Service</h3>
-              <p>Dedicated support for all your needs.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <section className="testimonials section">
-        <div className="container">
-          <div className="testimonials-grid">
-            <div className="testimonial">
-              <div className="testimonial-content">
-                <p>"My daughter has already learned so much from her 3 one on one sessions with Coach Miles. Looking forward to a full week of camp next week with all the amazing coaches."</p>
-                <div className="testimonial-author">
-                  <strong>Vickie Y.</strong>
-                  <span>Rancho Santa Margarita, CA</span>
-                </div>
-              </div>
-            </div>
-            <div className="testimonial">
-              <div className="testimonial-content">
-                <p>"My 12 year old is on another level now because of Coach Edgar! I love how he makes every session impactful to my son's needs."</p>
-                <div className="testimonial-author">
-                  <strong>Alan A.</strong>
-                  <span>Irvine, CA</span>
-                </div>
-              </div>
-            </div>
-            <div className="testimonial">
-              <div className="testimonial-content">
-                <p>"Both my daughter and my son have seen such a big change in their abilities. They are also getting more playing time in their games because of Coach Jose."</p>
-                <div className="testimonial-author">
-                  <strong>Tyler C.</strong>
-                  <span>Lake Forest, CA</span>
-                </div>
-              </div>
+              <img src={`${process.env.PUBLIC_URL}/images/pexels-markusspiske-114296.jpg`} alt="Soccer Training" />
             </div>
           </div>
         </div>
@@ -144,7 +100,7 @@ const Home = () => {
         <div className="container">
           <div className="methodology-content">
             <div className="methodology-image">
-              <img src="/images/Premier-Team.jpg" alt="Premier Team" />
+              <img src={`${process.env.PUBLIC_URL}/images/pexels-anastasia-shuraeva-9519537.jpg`} alt="Premier Team" />
             </div>
             <div className="methodology-text">
               <h2>OUR METHODOLOGY</h2>
@@ -155,13 +111,13 @@ const Home = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="contact section">
+      <section id="contact" className="contact section">
         <div className="container">
           <div className="contact-content">
             <div className="contact-info">
               <h2>Still Have Questions?</h2>
               <p>Reach out to us and a dedicated person from our team will help answer all of your questions!</p>
-              <p>Email us at <a href="mailto:info@premier-soccertraining.com">info@premier-soccertraining.com</a> or call us at <a href="tel:949.235.8720">949.235.8720</a>.</p>
+              <p>Email us at <a href="mailto:info@premier-soccertraining.com">info@premier-soccertraining.com</a> or call us at <a href="tel:949.537.6465">949.537.6465</a>.</p>
               <a href="/book" className="btn btn-primary">BOOK YOUR SESSION</a>
             </div>
             <div className="contact-form">
